@@ -1,0 +1,42 @@
+@url = https://8080-igorgalvao1-p2arquitetu-0mk5fcbig0w.ws-us116.gitpod.io
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVGVzdGVzIiwic3ViIjoiZGVtb191c2VyIiwiZXhwIjoxODAwMDAwMDAwfQ.WXyz12345abcDEFGHIJKLMNOPqrSTUVWxyz67890
+
+GET {{url}}/tarefas
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}/tarefas
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "titulo": "Organizar Escritório",
+    "descricao": "Arrumar prateleiras e arquivar documentos",
+    "dataCriacao": "2024-11-19",
+    "dataInicio": "2024-11-20",
+    "dataConclusao": "2024-11-22",
+    "colaboradores": [
+        {"id_colaborador": 1}
+    ]
+}
+
+###
+PUT {{url}}/tarefas/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "titulo": "Atualizar Planilhas de Vendas",
+    "descricao": "Revisar e corrigir dados financeiros",
+    "dataCriacao": "2024-11-18",
+    "dataInicio": "2024-11-20",
+    "dataConclusao": "2024-11-25",
+    "colaboradores": [
+        {"id_colaborador": 2}
+    ]
+}
+
+###
+DELETE {{url}}/tarefas/1
+Authorization: Bearer {{token}}

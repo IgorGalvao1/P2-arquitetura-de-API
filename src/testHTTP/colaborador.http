@@ -1,0 +1,28 @@
+@url = https://8080-igorgalvao1-p2arquitetu-0mk5fcbig0w.ws-us116.gitpod.io
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVGVzdGVzIiwic3ViIjoiZGVtb191c2VyIiwiZXhwIjoxODAwMDAwMDAwfQ.WXyz12345abcDEFGHIJKLMNOPqrSTUVWxyz67890
+
+
+GET {{url}}/colaboradores
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}/colaboradores
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Igor"
+}
+
+###
+PUT {{url}}/colaboradores/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Rodrigo"
+}
+
+###
+DELETE {{url}}/colaboradores/1
+Authorization: Bearer {{token}}

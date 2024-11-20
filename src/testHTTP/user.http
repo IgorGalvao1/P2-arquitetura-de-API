@@ -1,0 +1,9 @@
+@url = https://8080-igorgalvao1-p2arquitetu-0mk5fcbig0w.ws-us116.gitpod.io
+
+POST {{url}}/auth
+Content-Type: application/json
+
+{
+    "nomeDeUsuario": "admin",
+    "senha": "admin"
+}
